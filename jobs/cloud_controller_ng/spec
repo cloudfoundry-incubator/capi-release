@@ -194,6 +194,7 @@ provides:
   - cc.tls_port
   - cc.uaa.client_timeout
   - cc.volume_services_enabled
+  - cc.sapi_routes_only
   - copilot.client_ca_file
   - copilot.client_chain_file
   - copilot.client_key_file
@@ -919,6 +920,10 @@ properties:
 
   cc.volume_services_enabled:
     description: "Enable binding to services that provide volume_mount information."
+    default: false
+
+  cc.sapi_routes_only:
+    description: "Run cloud_controller_ng in SAPI mode only"
     default: false
 
   cc.system_hostnames:
