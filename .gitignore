@@ -1,3 +1,4 @@
+jobs/cloud_controller_ng/templates/config/kubectl
 config/dev.yml
 config/private.yml
 releases/*.tgz

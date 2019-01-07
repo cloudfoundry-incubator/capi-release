@@ -1,0 +1,8 @@
+set -e
+
+KUBECTL_VERSION=1.11.2
+export HOME=/var/vcap
+
+mkdir -p ${BOSH_INSTALL_TARGET}/bin
+cp kubectl/kubectl ${BOSH_INSTALL_TARGET}/bin/kubectl
+chmod +x ${BOSH_INSTALL_TARGET}/bin/kubectl
