@@ -7,6 +7,9 @@ wait_for_blobstore
 
 cd /var/vcap/packages/cloud_controller_ng/cloud_controller_ng
 
+export KUBECONFIG=/var/vcap/jobs/cloud_controller_ng/config/kubectl
+export PATH=$PATH:/var/vcap/packages/kubectl/bin
+
 <% if spec.bootstrap && !p('cc.run_prestart_migrations') %>
 echo 'Running migrations and seeds'
 /var/vcap/jobs/cloud_controller_ng/bin/migrate_db
